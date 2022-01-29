@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  align-items: center;
+  .navigation {
+    a {
+      color: $textColor;
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .humburger {
+    display: none;
+    span {
+      display: block;
+      background-color: #000;
+      width: 1.5rem;
+      height: 0.1rem;
+      &:not(:last-child) {
+        margin-bottom: 0.3rem;
+      }
+    }
+    @media screen and(max-width:1000px) {
+      display: block;
+    }
+  }
+  @media screen and(max-width:1000px) {
+    padding: 1rem 0;
+    width: 100%;
+  }
+  .invition {
+    background: -webkit-gradient(
+      linear,
+      right top,
+      left top,
+      from(#98a2f1),
+      to(#31d35c)
+    );
+    background: linear-gradient(to left, #98a2f1, #31d35c);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    color: #fff;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  @media screen and (max-width: 600px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+}

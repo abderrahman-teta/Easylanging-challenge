@@ -1,0 +1,55 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  .info {
+    padding: 5rem 5rem 5rem 5rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      @media screen and (max-width: 600px) {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+    p {
+      font-size: 1.125rem;
+      color: $textColor;
+      width: 25rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      @media screen and (max-width: 600px) {
+        width: 20rem;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    .invition2 {
+      background: linear-gradient(
+        to left,
+        hsl(233, 76%, 77%),
+        hsl(136, 65%, 51%)
+      );
+      padding: 0.8rem 1.5rem;
+      border-radius: 3rem;
+
+      color: #fff;
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      padding: 2rem;
+    }
+  }
+
+  .image {
+    width: 100%;
+    margin-right: -13rem;
+    margin-top: -10rem;
+    z-index: -100;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

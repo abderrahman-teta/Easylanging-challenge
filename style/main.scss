@@ -1,0 +1,24 @@
+@import "./_variables.scss";
+@import "./_navbar.scss";
+@import "./_hero.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.7s ease;
+  font-family: "Public Sans", sans-serif;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+.image-mockups {
+  position: absolute;
+  width: 33rem;
+  top: -3rem;
+  right: -8rem;
+  z-index: -20;
+}

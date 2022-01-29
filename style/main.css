@@ -1,0 +1,184 @@
+/* variables  */
+/* end variables  */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100% !important;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation a {
+  color: #bcbdbd;
+}
+
+.header .navigation a:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .navigation {
+    display: none;
+  }
+}
+
+.header .humburger {
+  display: none;
+}
+
+.header .humburger span {
+  display: block;
+  background-color: #000;
+  width: 1.5rem;
+  height: 0.1rem;
+}
+
+.header .humburger span:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .humburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 1rem 0;
+    width: 100%;
+  }
+}
+
+.header .invition {
+  background: -webkit-gradient(linear, right top, left top, from(#98a2f1), to(#31d35c));
+  background: linear-gradient(to left, #98a2f1, #31d35c);
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .header .invition {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+  }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .info {
+  padding: 5rem 5rem 5rem 5rem;
+}
+
+.hero .info h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .hero .info h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+.hero .info p {
+  font-size: 1.125rem;
+  color: #bcbdbd;
+  width: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .hero .info p {
+    width: 20rem;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+.hero .info .invition2 {
+  background: -webkit-gradient(linear, right top, left top, from(#98a2f1), to(#31d35c));
+  background: linear-gradient(to left, #98a2f1, #31d35c);
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero .info .invition2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero .info {
+    padding: 2rem;
+  }
+}
+
+.hero .image {
+  width: 100%;
+  margin-right: -13rem;
+  margin-top: -10rem;
+  z-index: -100;
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  font-family: "Public Sans", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.image-mockups {
+  position: absolute;
+  width: 33rem;
+  top: -3rem;
+  right: -8rem;
+  z-index: -20;
+}
+/*# sourceMappingURL=main.css.map */
