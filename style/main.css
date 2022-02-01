@@ -155,7 +155,7 @@
     position: absolute;
     background-size: 90%;
     background-position: center bottom;
-    background-image: url("../images/image-mockups.png");
+    background-image: url(../images/image-mockups.png);
     left: 7rem;
     background-repeat: no-repeat;
   }
