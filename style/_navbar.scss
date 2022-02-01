@@ -1,10 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  width: 100% !important;
+  max-width: 69.3rem;
+  margin: 0 auto;
   padding: 1rem 1rem;
   background-color: #fff;
-  margin-bottom: 1rem;
+  
   align-items: center;
   .navigation {
     a {

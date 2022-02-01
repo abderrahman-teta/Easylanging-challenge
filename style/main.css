@@ -8,10 +8,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100% !important;
+  max-width: 69.3rem;
+  margin: 0 auto;
   padding: 1rem 1rem;
   background-color: #fff;
-  margin-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -89,47 +89,105 @@
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #fafafa;
 }
 
-.hero .info {
-  padding: 5rem 5rem 5rem 5rem;
+.hero .container {
+  max-width: 69.3rem;
+  margin: 0 auto;
 }
 
-.hero .info h1 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-@media screen and (max-width: 600px) {
-  .hero .info h1 {
-    font-size: 2.5rem;
-    text-align: center;
+@media screen and (min-width: 64rem) {
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
-.hero .info p {
-  font-size: 1.125rem;
-  color: #bcbdbd;
-  width: 25rem;
-  margin-top: 1rem;
+.hero .container .image {
+  width: 100%;
+  min-height: 17.5rem;
+  background-image: url(../images/bg-intro-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero .container .image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 90%;
+  background-position: center bottom;
+  background-image: url("../images/image-mockups.png");
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 64rem) {
+  .hero .container .image {
+    background-image: none;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    min-height: 40rem;
+  }
+  .hero .container .image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
+  .hero .container .image::after {
+    content: "";
+    width: 130%;
+    height: 120%;
+    position: absolute;
+    background-size: 90%;
+    background-position: center bottom;
+    background-image: url("../images/image-mockups.png");
+    left: 7rem;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero .container .info {
+  text-align: center;
+}
+
+.hero .container .info h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #303030;
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-  .hero .info p {
-    width: 20rem;
-    text-align: center;
-    font-weight: 300;
+@media screen and (min-width: 64rem) {
+  .hero .container .info h1 {
+    padding-top: 8rem;
+    margin: 0;
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
   }
 }
 
-.hero .info .invition2 {
+.hero .container .info p {
+  color: #9698a6;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.hero .container .info .invition2 {
   background: -webkit-gradient(linear, right top, left top, from(#98a2f1), to(#31d35c));
   background: linear-gradient(to left, #98a2f1, #31d35c);
   padding: 0.8rem 1.5rem;
@@ -137,26 +195,211 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1000px) {
-  .hero .info .invition2 {
-    display: none;
+@media screen and (min-width: 64rem) {
+  .hero .container .info {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .hero .info {
+@media screen and (min-width: 60rem) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.services__ {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.services__ .contianer {
+  max-width: 69.5rem;
+  margin: 0 auto;
+}
+
+.services__ .head h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #303030;
+  padding: 0 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.services__ .head p {
+  color: #9698a6;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .services__ .head {
+    text-align: left;
+  }
+}
+
+.services__ .services .service h2 {
+  color: #4f4f4f;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.services__ .services .service p {
+  color: #9698a6;
+  line-height: 1.8;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .services__ .services .service p {
+    text-align: left;
+  }
+}
+
+.services__ .services .service::not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .services__ .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles .container {
+  max-width: 69.5rem;
+  margin: 0 auto;
+}
+
+.articles .title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #303030;
+}
+
+.articles .title h1 {
+  padding: 3rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .articles .title h1 {
     padding: 2rem;
   }
 }
 
-.hero .image {
-  width: 100%;
-  margin-right: -13rem;
-  margin-top: -10rem;
-  z-index: -100;
-  background-image: url("../images/bg-intro-desktop.svg");
+@media screen and (min-width: 60rem) {
+  .articles .title {
+    text-align: left;
+  }
+}
+
+.articles .arcticles_cards .article {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem 2rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.15);
+}
+
+.articles .arcticles_cards .article .img {
+  background-image: url("../images/image-currency.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 100%;
+  max-height: 10rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+  height: 12.5rem;
+}
+
+.articles .arcticles_cards .article .img2 {
+  background-image: url("../images/image-restaurant.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 10rem;
+  height: 12.5rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.articles .arcticles_cards .article .img3 {
+  background-image: url("../images/image-plane.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 12.5rem;
+  max-height: 10rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.articles .arcticles_cards .article .img4 {
+  background-image: url("../images/image-confetti.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 10rem;
+  height: 12.5rem;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.articles .arcticles_cards .article .info {
+  text-align: left;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .articles .arcticles_cards .article .info {
+    padding: 1rem;
+  }
+  .articles .arcticles_cards .article .info h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  .articles .arcticles_cards .article .info p {
+    font-size: 1rem;
+    color: #a69b9b;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .articles .arcticles_cards .article {
+    margin: 1rem 1rem;
+  }
+}
+
+.articles .arcticles_cards .article:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media screen and (min-width: 60rem) {
+  .articles .arcticles_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 * {
@@ -180,5 +423,9 @@ body {
   top: -3rem;
   right: -8rem;
   z-index: -20;
+}
+
+.attribution {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

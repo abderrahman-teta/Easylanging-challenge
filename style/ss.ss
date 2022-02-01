@@ -1,7 +1,6 @@
 .hero {
-  background-color: hsl(0, 0%, 98%);
   .container {
-    max-width: 69.3rem;
+    max-width: 90rem;
     margin: 0 auto;
     @media screen and (min-width:64rem) {
      display:flex ;
@@ -9,7 +8,7 @@
     }
     .image {
       width:100%;
-      min-height: 17.5rem;
+      height: 17.5rem;
       background-image: url(../images/bg-intro-mobile.svg);
       background-position: center ;
       background-repeat: no-repeat;
@@ -27,58 +26,29 @@
         background-repeat: no-repeat;
        }
       @media screen and (min-width:64rem) {
-        background-image: none;
-        &::before {
-          content: "";
-          position: absolute;
-          height: 100%;
-          background-image: url("/images/bg-intro-desktop.svg");
-          background-repeat: no-repeat;
-          background-position: center bottom;
-          width: 150%;
-          background-size: 122%;
-          background-position: 0% 83%;
-        }
-        &::after {
-          content: "";
-        width:130%;
-        height: 120%;
-        position: absolute;
-        background-size: 90%;
-        background-position:  center bottom;
-        background-image: url('../images/image-mockups.png');
-        left:7rem;
-        background-repeat: no-repeat;
-        }
         flex: 3;
         order: 2;
-        min-height: 40rem;
+        height: 40rem;
        
+        z-index: -20;
+        background-image: url(../images/bg-intro-desktop.svg);
         
         
       }
     }
     .info {
       text-align: center;
-      //margin: 2rem 1rem;
-
+      margin: 2rem 1rem;
       h1 {
         font-size: 2.5rem;
         font-weight: 400;
         color:hsl(0, 0%, 19%);
         margin-bottom: 2rem;
-        @media screen and (min-width:64rem) {
-          padding-top:8rem;
-          margin: 0;
-          font-size: 3.2rem;
-          margin-bottom: 1rem;
-        }
       }
       p {
         color:hsl(233, 8%, 62%);
         margin-bottom: 2rem;
         line-height: 1.8;
-
       }
       .invition2 {
         background: -webkit-gradient(
@@ -93,19 +63,15 @@
         border-radius: 3rem;
         color: #fff;
         
-        
       }
       @media screen and (min-width:64rem) {
         flex: 2;
         order: 1;
-        text-align: left;
       }
     }
   }
   @media screen and (min-width:60rem) {
     display: flex;
-   
-
   }
   
 }
