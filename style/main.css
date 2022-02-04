@@ -155,7 +155,7 @@
     position: absolute;
     background-size: 90%;
     background-position: center bottom;
-    background-image: url(../images/image-mockups.png);
+    background-image: url("../images/image-mockups.png");
     left: 7rem;
     background-repeat: no-repeat;
   }
@@ -366,7 +366,21 @@
 
 .articles .arcticles_cards .article .info {
   text-align: left;
-  padding: 3rem;
+  padding: 2rem;
+}
+
+.articles .arcticles_cards .article .info h2 {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+}
+
+.articles .arcticles_cards .article .info p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.articles .arcticles_cards .article .info p:not(:last-child) {
+  color: rgba(56, 56, 56, 0.445);
 }
 
 @media screen and (min-width: 60rem) {
